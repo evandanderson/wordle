@@ -31,11 +31,11 @@ def main():
             remaining_guesses -= 1
             print(validate(guess, wordle.word))
             if guess == wordle.word:
-                print('Success! Solved in ' + str(6 - remaining_guesses) + ' attempt(s)')
+                print(f'Success! Solved in {str(6 - remaining_guesses)} attempt(s)')
                 break
         else:
             print('Word must be 5 characters')
-    print('The word was: ' + wordle.word)
+    print(f'The word was: {wordle.word}')
 
 if __name__ == '__main__':
     main()
